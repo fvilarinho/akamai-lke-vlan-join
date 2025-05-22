@@ -35,7 +35,7 @@ function checkDependencies() {
 
 # Prepare the environment to execute the script.
 function prepareToExecute() {
-  source functions.sh
+  source $BIN_DIR/functions.sh
 
   showBanner
 }
