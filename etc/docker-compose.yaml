@@ -1,0 +1,4 @@
+services:
+  akamai-lke-vlan-join:
+    build: .
+    image: ${DOCKER_REGISTRY_URL}/${DOCKER_REGISTRY_ID}/akamai-lke-vlan-join:${BUILD_VERSION}

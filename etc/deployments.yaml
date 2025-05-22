@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: akamai-lke-vlan-join
+spec:
+  selector:
+    matchLabels:
+      app: akamai-lke-vlan-join
+  template:
+    metadata:
+      labels:
+        app: akamai-lke-vlan-join
+    spec:
+      containers:
+        - name: akamai-lke-vlan-join
+          image: ghcr.io/fvilarinho/akamai-lke-vlan-join:latest
