@@ -20,8 +20,7 @@ is to use VLANs or VPCs to isolate traffic to and from cluster nodes. However, A
 built-in VLANs or VPCs in the Linode Kubernetes Engine (LKE). This feature is planned for release in the LKE Enterprise 
 offering in late 2025.
 
-Meanwhile the LKE doesn't support built-in VLANs or VPCs, you can automate the addition of a VLAN in the LKE nodes using
-project.
+Meanwhile, you can isolate the LKE cluster, automating the attachment of a VLAN in the nodes using this project.
 
 ## 2. Maintainers
 - [Felipe Vilarinho](https://www.linkedin.com/in/fvilarinho)
