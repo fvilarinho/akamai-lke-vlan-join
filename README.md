@@ -31,7 +31,7 @@ Since this project is open-source, you can also fork and customize it on your ow
 set up your build environment.
 
 ### Latest build status
-- [![Akamai Secure LKE Pipeline](https://github.com/fvilarinho/akamai-secure-lke/actions/workflows/pipeline.yml/badge.svg)](https://github.com/fvilarinho/akamai-secure-lke/actions/workflows/pipeline.yml)
+- [![Akamai LKE VLAN Join Pipeline](https://github.com/fvilarinho/akamai-lke-vlan-join/actions/workflows/pipeline.yml/badge.svg)](https://github.com/fvilarinho/akamai-lke-vlan-join/actions/workflows/pipeline.yml)
 
 ## 3. Architecture
 The automation is consisted in 3 Kubernetes resources:
