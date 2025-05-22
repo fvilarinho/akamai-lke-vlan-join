@@ -23,7 +23,7 @@ function publish() {
                                                           $DOCKER_REGISTRY_URL \
                                                           --password-stdin || exit 1
 
-  $DOCKER_CMD compose -f etc/docker-compose.yaml push
+  $DOCKER_CMD compose push
 }
 
 # Main function.
