@@ -13,6 +13,7 @@ function showBanner() {
   fi
 }
 
+# Gets the node instance identifier.
 function getNodeId() {
   NODE_NAME=$1
 
@@ -26,6 +27,7 @@ function getNodeId() {
   echo $NODE_ID
 }
 
+# Gets the node index to be used in the VLAN IP assignment.
 function getNodeIndex() {
   echo $(hostname -i | awk -F'.' '{print $4}')
 }

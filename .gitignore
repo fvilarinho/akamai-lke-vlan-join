@@ -1,3 +1,6 @@
 /.idea/
 /etc/secrets.yaml
 /etc/deployments.yaml
+/etc/*-kubeconfig.yaml
+/iac/.terraform*
+/iac/terraform.tf*

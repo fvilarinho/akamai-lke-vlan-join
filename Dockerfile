@@ -29,9 +29,9 @@ RUN addgroup -S ${USER_ID} && \
     mkdir -p ${BIN_DIR} ${ETC_DIR}
 
 # Copies the required automation files.
+COPY banner.txt ${ETC_DIR}/
 COPY bin/functions.sh ${BIN_DIR}/
 COPY bin/run.sh ${BIN_DIR}/
-COPY etc/banner.txt ${ETC_DIR}/
 
 # Sets the required permissions.
 RUN chmod +x ${BIN_DIR}/*.sh && \
