@@ -17,6 +17,8 @@ function getNodeId() {
   NODE_NAME=$1
 
   NODE_ID=$($LINODE_CLI_CMD --text --no-header --format id linodes list --label "$NODE_NAME")
+
+  echo $NODE_ID
 }
 
 function getNodeIndex() {
