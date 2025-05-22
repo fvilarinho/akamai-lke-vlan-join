@@ -88,6 +88,12 @@ function main() {
   prepareToExecute
   checkDependencies
   joinNodeToVlan
+
+  echo "- Done."
+
+  while true; do
+    sleep 1
+  done
 }
 
 main
