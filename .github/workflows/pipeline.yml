@@ -6,8 +6,9 @@ on:
     paths-ignore:
       - ".gitignore"
       - "*.md"
+      - "bin/applyManifest.sh"
       - "deploy.sh"
-      - "/etc/deployments.yaml"
+      - "iac/*"
       - "LICENSE"
 
 permissions:
