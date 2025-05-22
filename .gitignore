@@ -1,1 +1,3 @@
 /.idea/
+/etc/secrets.yaml
+/etc/deployments.yaml

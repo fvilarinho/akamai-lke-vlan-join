@@ -28,7 +28,8 @@ COPY bin/run.sh ${BIN_DIR}/
 COPY etc/banner.txt ${ETC_DIR}/
 
 # Add the default user.
-RUN adduser -D ${USER_ID}
+RUN adduser -D ${USER_ID} && \
+    chown -R ${USER_ID}:${USER_ID} ${HOME_DIR}
 
 USER ${USER_ID}
 
