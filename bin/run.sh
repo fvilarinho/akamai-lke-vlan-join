@@ -14,12 +14,6 @@ function checkDependencies() {
     exit 1
   fi
 
-  if [ -z "$NODE_INDEX" ]; then
-    echo "The node index is not defined! Please define it first to continue!"
-
-    exit 1
-  fi
-
   if [ -z "$NODE_NAME" ]; then
     echo "The node name is not defined! Please define it first to continue!"
 
@@ -52,6 +46,7 @@ function joinNodeToVlan() {
 
   NEEDS_TO_REBOOT=false
   NODE_ID=$(getNodeId $NODE_NAME)
+  NODE_INDEX=$(getNodeIndex)
 
   echo "- Fetching the network configuration of the node $NODE_NAME..."
 

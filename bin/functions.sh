@@ -13,6 +13,16 @@ function showBanner() {
   fi
 }
 
+function getNodeId() {
+  NODE_NAME=$1
+
+  NODE_ID=$($LINODE_CLI_CMD --text --no-header --format linodes list --label "$NODE_NAME")
+}
+
+function getNodeIndex() {
+  echo $(hostname -i | awk -F'.' '{print $4}')
+}
+
 # Get the node network configurations.
 # Receive as argument the node identifier.
 function getNodeConfigId() {
@@ -115,3 +125,4 @@ function rebootNode() {
 }
 
 prepareToExecute
+}
