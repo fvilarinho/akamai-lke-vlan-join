@@ -79,7 +79,7 @@ function joinNodeToVlan() {
   if [ "$NEEDS_TO_REBOOT" == "true" ]; then
     echo "- Rebooting the node $NODE_NAME to apply the changes..."
 
-    #rebootNode $NODE_ID $NODE_CONFIG_ID
+    rebootNode $NODE_ID $NODE_CONFIG_ID
   fi
 }
 
