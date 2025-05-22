@@ -26,8 +26,8 @@ function checkDependencies() {
     exit 1
   fi
 
-  if [ -z "$VLAN_NAME" ]; then
-    echo "The VLAN name is not defined! Please define it first to continue!"
+  if [ -z "$VLAN_NETWORK_MASK" ]; then
+    echo "The VLAN network mask is not defined! Please define it first to continue!"
 
     exit 1
   fi
@@ -57,7 +57,7 @@ function joinNodeToVlan() {
   if [ "$ALREADY_HAS_PUBLIC_INTERFACE" == "false" ]; then
     echo "- Adding the public interface to the node $NODE_NAME..."
 
-    #addPublicInterfaceToNode $NODE_ID $NODE_CONFIG_ID
+    addPublicInterfaceToNode $NODE_ID $NODE_CONFIG_ID
 
     NEEDS_TO_REBOOT=true
   else
@@ -69,7 +69,7 @@ function joinNodeToVlan() {
   if [ "$ALREADY_HAS_VLAN_INTERFACE" == "false" ]; then
     echo "- Adding the VLAN $VLAN_NAME to the node $NODE_NAME..."
 
-    #addVlanInterfaceToNode $NODE_ID $NODE_CONFIG_ID $NODE_INDEX $VLAN_NAME $VLAN_NETWORK_MASK
+    addVlanInterfaceToNode $NODE_ID $NODE_CONFIG_ID $NODE_INDEX $VLAN_NAME $VLAN_NETWORK_MASK
 
     NEEDS_TO_REBOOT=true
   else
