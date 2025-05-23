@@ -34,7 +34,7 @@ set up your build environment.
 - [![Akamai LKE VLAN Join Pipeline](https://github.com/fvilarinho/akamai-lke-vlan-join/actions/workflows/pipeline.yml/badge.svg)](https://github.com/fvilarinho/akamai-lke-vlan-join/actions/workflows/pipeline.yml)
 
 ## 3. Architecture
-The automation is consisted in 3 Kubernetes resources:
+The automation is consisted in 2 Kubernetes resources:
 
 2. Secrets: Responsible to define the credentials to run the automation. Please check the file `iac/secrets.tf'.
 3. DaemonSet: Responsible to execute the automation. Please check the file `iac/deployments.tf'.
